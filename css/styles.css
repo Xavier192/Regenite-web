@@ -1,0 +1,223 @@
+/****************Pre styling***************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/********************Utilities**********************/
+
+.container {
+    max-width: 1366px;
+    margin: auto;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .flex {
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 15px 75px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color ease-in-out .3s;
+}
+
+.btn-outline-white {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #0BBED1;
+    color: #fff;
+}
+
+.btn-outline-white:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+/**********************Navbar************************/
+
+.nav {
+    height: 80px;
+}
+
+.nav__logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo__1 {
+    color: #333;
+}
+
+.logo__2 {
+    color: #0BCADE;
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.nav__link,
+.nav__button {
+    padding: 12px 40px;
+}
+
+.nav__button {
+    background-color: #FF9900;
+    border-radius: 4px;
+    margin-left: 35px;
+    color: #fff;
+    transition: background-color .3s;
+}
+
+.nav__button:hover {
+    background-color: #e98c01;
+}
+
+.nav__link:hover {
+    border-bottom: 2px solid #0BBED1;
+}
+
+
+/*********************Carousel**********************/
+
+.carousel {
+    position: relative;
+    height: 500px;
+}
+
+.carousel__control--left {
+    left: 0;
+}
+
+.carousel__control--right {
+    right: 0;
+}
+
+.control {
+    position: absolute;
+    width: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: rgba(185, 185, 185, .35);
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    z-index: 12;
+}
+
+.control img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.carousel__slide {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__slide li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.carousel__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__caption {
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel__indicators {
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    margin: -40px auto;
+}
+
+.carousel__indicator {
+    padding: 5px;
+    border: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    border: .5px solid #fff;
+}
+
+.carousel__title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 8px #000;
+}
+
+.carousel__text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-top: 15px;
+    text-shadow: 2px 2px 10px #000;
+}
+
+.carousel__text {
+    color: #fff;
+}
+
+.carousel__container-inner {
+    width: 40%;
+}
+
+.carousel__container-inner .btn {
+    margin-top: 30px;
+}
+
+.active {
+    background-color: #fff;
+}
