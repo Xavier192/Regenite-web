@@ -1,66 +1,58 @@
-const carouselSlide = document.querySelector('.carousel__slide');
-const carouselItems = Array.from(carouselSlide.children);
-const itemWidth = carouselItems[0].clientWidth;
+/*******************Declarations**********************/
+
+const carouselItems = Array.from(document.querySelector('.carousel__slide').children);
 const leftArrow = document.querySelector('.carousel__control--left');
 const rightArrow = document.querySelector('.carousel__control--right');
 const indicators = Array.from(document.querySelector('.carousel__indicators').children);
 let slideCounter = 0;
 
 
+/******************Utilities*********************/
 
-indicators.forEach(function(button, index) {
-    button.onclick = function() {
-        removeActive();
-        indicators[index].classList.add('active');
-        carouselItems[slideCounter].classList.remove('visible');
-        carouselItems[index].classList.add('visible');
-        slideCounter = index;
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+/******************Start******************/
+window.onload = function() {
+    startCarousel();
+}
+
+async function startCarousel() {
+    while (true) {
+        await sleep(13000);
+        slideCounter++;
+        reset([carouselItems, indicators], ['visible', 'active']);
     }
-});
+}
+
+/***************Carousel functionality****************/
 
 leftArrow.onclick = function() {
     slideCounter--;
-    if (slideCounter < -1) return;
-    if (slideCounter < 0) {
-        comeForward();
-    } else {
-        carouselItems[slideCounter + 1].classList.remove('visible');
-        carouselItems[slideCounter].classList.add('visible');
-        moveButton(slideCounter + 1, slideCounter);
-    }
+    reset([carouselItems, indicators], ['visible', 'active']);
 }
 
 rightArrow.onclick = function() {
     slideCounter++;
-    if (slideCounter > carouselItems.length) return;
-    if (slideCounter > carouselItems.length - 1) {
-        comeBack();
-    } else {
-        carouselItems[slideCounter - 1].classList.remove('visible');
-        carouselItems[slideCounter].classList.add('visible');
-        moveButton(slideCounter - 1, slideCounter);
+    reset([carouselItems, indicators], ['visible', 'active']);
+}
+
+indicators.forEach(function(item, index) {
+    item.onclick = function() {
+        slideCounter = index;
+        reset([carouselItems, indicators], ['visible', 'active']);
     }
-}
+});
 
-function comeBack() {
-    slideCounter = 0;
-    carouselItems[carouselItems.length - 1].classList.remove('visible');
-    carouselItems[slideCounter].classList.add('visible');
-    moveButton(carouselItems.length - 1, slideCounter);
-}
+function reset(subject, clas) {
+    if (slideCounter < 0) {
+        slideCounter = 2;
+    }
 
-function comeForward() {
-    slideCounter = carouselItems.length - 1;
-    carouselItems[0].classList.remove('visible');
-    carouselItems[slideCounter].classList.add('visible');
-    moveButton(0, slideCounter);
-}
-
-function moveButton(posActual, posDestino) {
-    indicators[posActual].classList.remove('active');
-    indicators[posDestino].classList.add('active');
-}
-
-function removeActive() {
-    indicators.forEach(button => button.classList.remove('active'));
+    for (let i = 0; i < subject.length; i++) {
+        subject[i].forEach(item => item.classList.remove(clas[i]));
+        subject[i][Math.abs(slideCounter % subject[0].length)].classList.add(clas[i]);
+    }
 }

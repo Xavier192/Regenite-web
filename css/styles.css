@@ -198,6 +198,7 @@ body {
     background-color: transparent;
     border: .5px solid #fff;
     cursor: pointer;
+    box-shadow: 1px 1px 2px #000;
 }
 
 .carousel__title {
