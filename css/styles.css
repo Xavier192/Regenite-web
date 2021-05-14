@@ -1,6 +1,8 @@
 /****************Pre styling***************/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {}
+
 * {
     padding: 0;
     margin: 0;
@@ -23,6 +25,11 @@ ul {
 body {
     color: #333;
     font-family: 'Poppins', sans-serif;
+}
+
+h1,
+p {
+    margin: 10px 0;
 }
 
 
@@ -71,6 +78,15 @@ body {
 
 .carousel__slide .visible {
     opacity: 1;
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 500px;
+}
+
+.padding {
+    padding-top: 100px;
 }
 
 
@@ -230,4 +246,16 @@ body {
 
 .active {
     background-color: #fff;
+}
+
+
+/****************Two columns welcome section***************/
+
+.welcome .flex {
+    flex-wrap: wrap;
+}
+
+.welcome__text {
+    margin-right: 30px;
+    font-size: 23px;
 }
