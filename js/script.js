@@ -4,6 +4,8 @@ const carouselItems = Array.from(document.querySelector('.carousel__slide').chil
 const leftArrow = document.querySelector('.carousel__control--left');
 const rightArrow = document.querySelector('.carousel__control--right');
 const indicators = Array.from(document.querySelector('.carousel__indicators').children);
+const navMenu = document.querySelector('.nav__menu');
+const displayNavButton = document.querySelector('.nav__hamburger');
 let slideCounter = 0;
 let mouseEncima = false;
 
@@ -49,7 +51,12 @@ async function startCarousel() {
     }
 }
 
-/***************Carousel functionality****************/
+/*******************Display nav**************/
+
+displayNavButton.onclick = function() {
+        navMenu.classList.toggle('display-menu');
+    }
+    /***************Carousel functionality****************/
 
 leftArrow.onclick = function() {
     slideCounter--;
