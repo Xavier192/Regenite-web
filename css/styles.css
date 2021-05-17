@@ -55,7 +55,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    column-gap: 40px;
+    grid-gap: 20px;
 }
 
 .nav .flex {
@@ -105,8 +105,24 @@ p {
     padding-top: 100px;
 }
 
+.p-1 {
+    padding-top: 20px;
+}
+
+.my-4 {
+    width: 220px;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    border: 2.5px solid #0BCADE;
+}
+
 .margin {
     margin-top: 100px;
+}
+
+.center {
+    text-align: center;
 }
 
 
@@ -118,18 +134,15 @@ p {
     z-index: 99;
 }
 
-.nav__logo {
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
+.nav__logo img {
+    vertical-align: middle;
+    width: 140px;
 }
 
-.logo__1 {
-    color: #333;
-}
-
-.logo__2 {
-    color: #0BCADE;
+.nav__logo a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 
 .nav__menu {
@@ -295,17 +308,21 @@ p {
 /*****************Three column section cards******************/
 
 .disocveries {
-    background-color: var(--backgroundBlue);
+    background-color: #efefef;
 }
 
 .card {
     background-color: #fff;
-    box-shadow: 1px 1px 10px #333;
+    border: 1px solid #888;
 }
 
 .card h3 {
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 22px;
+}
+
+.card__text {
+    font-size: 14px;
 }
 
 .card__body {
@@ -345,10 +362,15 @@ p {
     .welcome__text {
         font-size: 1rem;
     }
-    .disocveries .grid {}
 }
 
 @media screen and (max-width:768px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card__body {
+        height: 300px;
+    }
     .nav .flex {
         display: block;
     }
