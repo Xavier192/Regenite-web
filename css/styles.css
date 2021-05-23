@@ -475,8 +475,8 @@ padding-bottom:35px;
 }
 
 @media screen and (max-width:1070px) {
-    .welcome__title {
-        font-size: 2rem;
+    .title{
+        font-size:2rem;
     }
     .text-1 {
         font-size: 1rem;
@@ -567,9 +567,6 @@ padding-bottom:35px;
     .btn {
         padding: 15px 25px;
     }
-}
-
-@media screen and (max-width:550px) {
     .carousel__container-inner {
         text-align: center;
         width: 100%;
@@ -577,4 +574,8 @@ padding-bottom:35px;
     .carousel__slide img {
         filter: brightness(.6);
     }
+}
+
+@media screen and (max-width:550px) {
+    
 }
