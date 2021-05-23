@@ -1,9 +1,31 @@
+/*******************INDEX******************
+
+1. Pre styles.
+2. Utilities (Classes that we reuse).
+3. Navbar styling.
+4. Carousel styling.
+5. Two column section styling.
+6. Three column section styling. 
+7. Fixed background.
+8. News carousel.
+9. Footer.
+10. Media queries (RWD).
+
+*/
+
+
 /****************Pre styling***************/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
-    --lightBlue: #0BBED1;
-    --backgroundBlue: #E8FFFF;
+    --primaryBlue: #0BBED1;
+    --transparentWhite: rgba(255, 255, 255, .96);
+    --fontColor: #333;
+    --titleSize: 2.5rem;
+    --textSize: 1.2rem;
+    --textSize-2: .9rem;
+    --titleSize-2: 1.3rem;
+    
 }
 
 * {
@@ -18,19 +40,15 @@ img {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: var(--fontColor);
 }
 
 ul {
     list-style: none;
 }
 
-body {
-    color: #333;
-    font-family: 'Poppins', sans-serif;
-}
-
 h1,
+h3,
 p {
     margin: 10px 0;
 }
@@ -39,6 +57,7 @@ p {
 /********************Utilities**********************/
 
 .container {
+    position: relative;
     max-width: 1406px;
     padding: 0 20px;
     margin: auto;
@@ -49,6 +68,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap:wrap;
+    gap:60px;
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 330px;   
 }
 
 .grid {
@@ -58,9 +84,12 @@ p {
     grid-gap: 20px;
 }
 
+.white {
+    color: #fff;
+}
+
 .nav .flex {
     justify-content: space-between;
-    background-color: #fff;
 }
 
 .btn {
@@ -79,7 +108,7 @@ p {
 }
 
 .btn-primary {
-    background-color: #0BBED1;
+    background-color: var(--primaryBlue);
     color: #fff;
     margin-top: 30px;
 }
@@ -90,19 +119,11 @@ p {
 
 .btn-outline-white:hover {
     background-color: #fff;
-    color: #333;
-}
-
-.carousel__slide .visible {
-    opacity: 1;
-}
-
-.flex-item {
-    flex: 1;
+    color: var(--fontColor);
 }
 
 .padding {
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .p-1 {
@@ -125,24 +146,59 @@ p {
     text-align: center;
 }
 
+.title {
+    font-size: var(--titleSize);
+    line-height: 1;
+}
+
+.title-2 {
+    font-size: var(--titleSize-2);
+}
+
+.text-1 {
+    font-size: var(--textSize);
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-top: 15px;
+}
+
+.pt-15 {
+    padding-top: 15px;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 10px #000;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*******************Body syling***********************/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--fontColor);
+}
+
 
 /**********************Navbar************************/
 
 .nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
     height: 80px;
-    position: relative;
-    z-index: 99;
+    background-color: var(--transparentWhite);
+    box-shadow: 2px 2px 3px #666;
 }
 
-.nav__logo img {
+.nav__logo-img {
     vertical-align: middle;
     width: 140px;
-}
-
-.nav__logo a {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
 }
 
 .nav__menu {
@@ -158,7 +214,6 @@ p {
     background-color: #FF9900;
     border-radius: 4px;
     margin-left: 35px;
-    color: #fff;
     transition: background-color .3s;
 }
 
@@ -166,17 +221,34 @@ p {
     background-color: #e98c01;
 }
 
-.nav__link:hover {
-    border-bottom: 2px solid #0BBED1;
+.nav__link{
+    position:relative;
 }
 
+.nav__link:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom:0;
+    left: 0;
+    background: var(--primaryBlue);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+
+.nav__link:hover:after{
+    visibility: visible;
+    transform: scaleX(1);
+} 
 
 /*********************Carousel**********************/
 
 .carousel {
     position: relative;
     height: 500px;
-    overflow: hidden;
+    
 }
 
 .carousel__control--left {
@@ -187,24 +259,22 @@ p {
     right: 0;
 }
 
+.carousel__slide .visible {
+    opacity: 1;
+}
+
 .control {
-    position: absolute;
-    width: 70px;
-    top: 50%;
-    transform: translateY(-50%);
+    padding: 5px;
     cursor: pointer;
     background-color: rgba(185, 185, 185, .35);
     border-radius: 5px;
-    color: #fff;
-    display: flex;
-    z-index: 12;
+    z-index: 4;
 }
 
 .control img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin: auto;
 }
 
 .carousel__slide {
@@ -227,17 +297,18 @@ p {
     object-position: top;
 }
 
+#carousel__item-img-middle {
+    object-position: center;
+}
+
 .carousel__caption {
-    position: absolute;
     width: 100%;
-    z-index: 9;
-    top: 50%;
-    transform: translateY(-50%);
+    z-index: 3;
 }
 
 .carousel__indicators {
     position: relative;
-    z-index: 9;
+    z-index: 4;
     text-align: center;
     margin: -40px auto;
 }
@@ -253,34 +324,28 @@ p {
 }
 
 .carousel__title {
-    color: #fff;
     font-weight: 700;
     font-size: 2.5rem;
     text-shadow: 3px 3px 8px #000;
 }
 
-.carousel__text {
-    color: #fff;
-    font-weight: 400;
-    font-size: 1.2rem;
-    padding-top: 15px;
-    text-shadow: 2px 2px 10px #000;
-}
-
-.carousel__text {
-    color: #fff;
-}
-
 .carousel__container-inner {
-    width: 40%;
+    width: 50%;
 }
 
 .carousel__container-inner .btn {
     margin-top: 30px;
 }
 
+.carousel__caption .container {
+    padding: 0 100px;
+    max-width: 1560px;
+}
+
 .active {
     background-color: #fff;
+    padding: 7px;
+    box-shadow: 1px 1px 4px #000;
 }
 
 
@@ -288,27 +353,13 @@ p {
 
 .welcome .flex {
     flex-wrap: wrap-reverse;
-    gap: 60px;
 }
-
-.welcome .flex-item {
-    min-width: 330px;
-}
-
-.welcome__title {
-    font-size: 2.5rem;
-    line-height: 1;
-}
-
-.welcome__text {
-    font-size: 1.2rem;
-}
-
 
 /*****************Three column section cards******************/
 
 .disocveries {
     background-color: #efefef;
+    padding-bottom: 100px;
 }
 
 .card {
@@ -316,17 +367,12 @@ p {
     border: 1px solid #888;
 }
 
-.card h3 {
-    margin-top: 10px;
-    font-size: 22px;
-}
-
 .card__text {
     font-size: 14px;
 }
 
 .card__body {
-    height: 230px;
+    height: 260px;
 }
 
 .card__footer {
@@ -355,18 +401,104 @@ p {
     object-fit: cover;
 }
 
+
+/****************Fixed background*****************/
+
+.fixed-background {
+    height: 265px;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+.mask {
+    background-color: rgba(220, 220, 220, .85);
+    width: 100%;
+    height: 100%;
+}
+
+/******************News carousel********************/
+
+.news .carousel{
+    height:600px;
+}
+
+.carousel__image{
+    height:100%;
+}
+
+.background {
+    background-image: url(../img/micro.jpg);
+    background-attachment: fixed;
+    height: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/********************Footer************************/
+
+.footer{
+    
+    background-color:#043439;
+    color:#fff;
+    padding-top:70px;
+
+}
+
+.footer .grid{
+    grid-column-gap:150px;
+    grid-row-gap:0;
+    grid-template-rows: 1fr 75px;
+}
+
+.grid-item{
+padding-bottom:35px;
+}
+
+.subfooter{
+    background-color:#043439;
+    border-top:1px solid #fafafa;
+    grid-column:1/4;
+}
+
+.footer__logo{
+    width:150px;
+    margin:10px 0;
+}
+
+.footer__border{
+    border-bottom:2px solid #fafafa;
+}
+
 @media screen and (max-width:1070px) {
     .welcome__title {
         font-size: 2rem;
     }
-    .welcome__text {
+    .text-1 {
         font-size: 1rem;
+    }
+    .footer .grid{
+        grid-column-gap:40px;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:834px){
+    
+    .footer .grid {
+        grid-template-rows:1fr 1fr 1fr 100px;
+        grid-template-columns:1fr;
+    }
+
+    .subfooter{
+        grid-column:1/1;
+    }
+
     .grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     .card__body {
         height: 300px;
@@ -380,24 +512,28 @@ p {
         text-align: center;
         border-bottom: 1px solid #ddd;
     }
+
     .nav {
         height: 60px;
         position: sticky;
         top: 0;
         box-shadow: 3px 0 10px #000;
     }
+
     .mobile-flex {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 100%;
     }
+
     .nav__hamburger {
         display: inline-block;
     }
+
     .nav__menu {
         display: block;
-        background-color: #E8FFFF;
+        background-color: var(--transparentWhite);
         width: 100%;
         position: absolute;
         z-index: -1;

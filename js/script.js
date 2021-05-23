@@ -54,9 +54,10 @@ async function startCarousel() {
 /*******************Display nav**************/
 
 displayNavButton.onclick = function() {
-        navMenu.classList.toggle('display-menu');
-    }
-    /***************Carousel functionality****************/
+    navMenu.classList.toggle('display-menu');
+}
+
+/***************Carousel functionality****************/
 
 leftArrow.onclick = function() {
     slideCounter--;
