@@ -191,7 +191,11 @@ p {
 
 .bk-white{
     background-color:#fff;
-    border-radius:10px;
+    
+}
+
+.br-12{
+    border-radius:12px;
 }
 
 
