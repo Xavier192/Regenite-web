@@ -56,6 +56,10 @@ p {
 
 /********************Utilities**********************/
 
+.box-shadow{
+    box-shadow:2px 2px 10px #aaa;
+}
+
 .container {
     position: relative;
     max-width: 1406px;

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include('phpTests/cargarTests.php');
+?>
 <html lang="en">
 
 <head>
@@ -12,9 +15,10 @@
     <meta property="og:title" content="Our Tests">
     <meta property="og:description" content="¡Find out how much you know!">
     <meta property="og:image" content="img/carousel_3.jpg">
-    <script src="js/testsScript.js" defer></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/tests.css">
+    <script src="js/utilities.js" defer></script>
+    <script src="js/testsScript.js" defer></script>
 </head>
 
 <body>
@@ -38,7 +42,7 @@
                     <a href="#" class="nav__link">Contact</a>
                 </li>
                 <li class="nav__item">
-                    <a href="tests.html" class="nav__link">Tests</a>
+                    <a href="tests.php" class="nav__link">Tests</a>
                 </li>
                 <li class="nav__item">
                     <a href="#" class="nav__button white">DONATE</a>
@@ -62,7 +66,7 @@
     <!--********Breadcrumbs section********-->
     <section class="breadcrumb">
         <div class="container">
-            <ul class="breadcrumb__list bk-white br-12">
+            <ul class="breadcrumb__list box-shadow br-12">
                 <li class="breadcrumb__item">
                     <a href="index.html" class="breadcrumb__link">Home ></a>
                 </li>
@@ -71,6 +75,38 @@
                 </li>
             </ul>
         </div>
+    </section>
+
+    
+    <!--***********Two column section welcome*********-->
+    <section class="welcome-section">
+        <div class="container">
+            <div class="flex box-shadow">
+            <div class="flex-item img-cover">
+                <img src="img/dna-tests.jpg" alt="dna test">
+            </div>
+            <div class="flex-item">
+                <h1 class="title">Our Tests</h1>
+                <img src="img/Title-border.png" alt="border title">
+                <p class="text-1">
+                We are a nonprofit organization focused
+                on investigation. Our mision is to solve
+                hereditary and genetic diseases using the
+                latest technologies. Feel free to contact
+                us if you have any suggestion or idea that
+                you think can be interesting, we're also hiring
+                so send us your resume and apply if you are
+                interesten in working with us.
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section title Tests-->
+     <section class="title__section">
+        <h2 class="title">Tests</h2>
+        <hr class="my-4">
     </section>
 
     <!--*******Search section*********-->
@@ -86,7 +122,7 @@
     <!--*******Table section***********-->
     <section class="tests">
         <div class="container">
-                <table class="tests__table bk-white br-12">
+                <table class="tests__table br-12">
                     <thead>
                         <tr>
                             <th>Photo</th>
@@ -96,56 +132,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                <img src="img/test-genoma.png" alt="genoma-img">
-                            </td>
-                            <td class="tests__title">Genoma</td>
-                            <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
-                            <td>24</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="img/test-cell-function.png" alt="cell-img">
-                            </td>
-                            <td class="tests__title">Cell function</td>
-                            <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="img/test-regenerative.png" alt="regenerative-cicle">
-                            </td>
-                            <td class="tests__title">Regenerative medicine</td>
-                            <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
-                            <td>9</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="img/test-organ.png" alt="lungs-img">
-                            </td>
-                            <td class="tests__title">Organ function</td>
-                            <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
-                            <td>43</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="img/test-virus.png" alt="virus-img">
-                            </td>
-                            
-                            <td class="tests__title">Virus</td>
-                            <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
-                            <td>17</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="img/test-bacteria.png" alt="bacteria-img">
-                            </td>
-                            
-                            <td class="tests__title">Bacteria</td>
-                            <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
-                            <td>32</td>
-                        </tr>
+                        <?php
+                        
+                        foreach($consulta as $fila){
+                            echo "<tr>
+                                    <td><img src=\"".$fila['urlImagen']."\"></td>
+                                    <td class=\"tests__title\">".$fila['titulo']."</td>
+                                    <td>".$fila['descriptcion']."</td>
+                                    <td>12</td>
+                                  </tr>";
+                        }
+                        ?>
                     </tbody>
                 </table>
         </div>
