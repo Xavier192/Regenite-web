@@ -1,0 +1,82 @@
+body{
+    background-color:#f0f0f0;
+}
+
+.nav{
+    box-shadow:1px 1px 5px #ccc;
+}
+
+/***********Indicators***************/
+
+.indicators .flex{
+    justify-content: space-between;
+}
+
+.indicators__time{
+    font-size:1.5rem;
+    margin-left:100px;
+}
+
+/*********Questions section************/
+
+.questions .flex{
+    justify-content:start;
+    align-items:flex-start;
+    gap:30px;
+}
+
+.bubble{
+    margin-bottom:50px;
+}
+
+.bubble__number{
+    background-color:#fff;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    font-weight:bold;
+}
+
+.bubble__number span{
+    margin:auto;
+}
+
+.bubble__body{
+    background-color:#fff;
+    flex:1;
+    height:200px;
+    border-radius:15px;
+}
+
+.bubble__body h2{
+    margin-left:15px;
+}
+
+.bubble__body-element{
+    margin:20px;
+}
+
+/*********Pagination section************/
+.pagination{
+    height:100px;
+}
+.pagination__buttons{
+    position:relative;
+    width:250px;
+    margin:auto;
+}
+
+.pagination__buttons img{
+    cursor:pointer;
+    width:80px;
+}
+
+.pagination__button--left{
+    position:absolute;
+    left:0;
+}
+.pagination__button--right{
+    position:absolute;
+    right:0;
+}
