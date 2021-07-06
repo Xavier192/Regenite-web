@@ -1,3 +1,6 @@
+use tests;
+
+
 DROP TABLE IF EXISTS respuesta;
 DROP TABLE IF EXISTS pregunta;
 DROP TABLE IF EXISTS test;
@@ -6,7 +9,7 @@ DROP TABLE IF EXISTS test;
 
 CREATE DATABASE IF NOT EXISTS tests;
 
-use tests;
+
 
 CREATE TABLE IF NOT EXISTS test (
 titulo varchar(30),
@@ -19,6 +22,7 @@ CREATE TABLE IF NOT EXISTS pregunta(
 titulo varchar(50),
 id varchar(5) primary key,
 idTest varchar(5),
+tipo ENUM('radio','checkbox'),
 foreign key (idTest) references test(id)
 );
 
@@ -69,6 +73,10 @@ INSERT INTO test VALUES (
 "lorem ipsum dolor si amet Lorem ipsum dolor sit amet",
 "./img/test-bacteria.png",
 "t6"
+);
+
+INSERT INTO pregunta VALUES(
+
 );
 
 

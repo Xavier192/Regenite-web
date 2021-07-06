@@ -15,9 +15,23 @@ body{
 .indicators__time{
     font-size:1.5rem;
     margin-left:100px;
+    padding:15px 0;
+    width:200px;
+    border:1px solid #999;
+    border-radius:10px;
+    background-color:#fff;
+    text-align:center;
 }
 
 /*********Questions section************/
+.questions{
+    height:1450px;
+    position:relative;
+    overflow:hidden;
+    max-width: 1366px;
+    margin:100px auto;
+}
+
 
 .questions .flex{
     justify-content:start;
@@ -57,7 +71,24 @@ body{
     margin:20px;
 }
 
+input[type="checkbox"]{
+    width:20px;
+    height:20px;
+    vertical-align: middle;
+}
+
+label{
+    vertical-align: middle;
+    margin-left:10px;
+}
+
+.questions__item{
+    position:absolute;
+    width:100%;
+}
+
 /*********Pagination section************/
+
 .pagination{
     height:100px;
 }

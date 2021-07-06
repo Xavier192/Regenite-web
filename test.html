@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/test.css">
 <script src="js/utilities.js" defer></script>
+<script src="js/test.js" defer></script>
 
 <body>
 
@@ -49,158 +50,442 @@
     <section class="indicators margin">
         <div class="container flex">
             <div class="indicators__time">
-                <p>Time: <span class="indicators__time-counter">00:03:00</span></p>
+                <p>Time: <span class="indicators__time-counter">00:05:00</span></p>
             </div>
             <div class="indicators__progress">
-                <img src="img/indicator.svg" alt="indicator">
+                <img src="img/progress-0.svg" alt="indicator" class="indicators__progress-img">
             </div>
         </div>
     </section>
 
     <!--***************Questions section********************-->
 
-    <section class="questions margin">
-        <div class="container">
-            <div class="bubble flex">
-                <div class="bubble__number">
-                    <span>1</span>
+    <section class="questions">
+        <div class="container q_cont">
+            <div class="questions__item">
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>1</span>
+                    </div>
+                    <div class="bubble__body">
+
+                        <h2>Title 1</h2>
+                        <div class="bubble__body-element">
+
+                            <input type="checkbox" id="p_1-res1">
+                            <label for="p_1-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_1-res2">
+                            <label for="p_1-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_1-res3">
+                            <label for="p_1-res3">Respuesta 3</label>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="bubble__body">
-
-                    <h2>Title 1</h2>
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 1</span>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>2</span>
                     </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
 
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 2</span>
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_2-res1">
+                            <label for="p_2-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_2-res2">
+                            <label for="p_2-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_2-res3">
+                            <label for="p_2-res3">Respuesta 3</label>
+                        </div>
+
                     </div>
-
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 3</span>
+                </div>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>3</span>
                     </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
 
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_3-res1">
+                            <label for="p_3-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_3-res2">
+                            <label for="p_3-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_3-res3">
+                            <label for="p_3-res3">Respuesta 3</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>4</span>
+                    </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_4-res1">
+                            <label for="p_4-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_4-res2">
+                            <label for="p_4-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_4-res3">
+                            <label for="p_4-res3">Respuesta 3</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>5</span>
+                    </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_5-res1">
+                            <label for="p_5-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_5-res2">
+                            <label for="p_5-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" id="p_5-res3">
+                            <label for="p_5-res3">Respuesta 3</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>6</span>
+                    </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_6-res1">
+                            <label for="p_6-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_6-res2">
+                            <label for="p_6-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_6-res3">
+                            <label for="p_6-res3">Respuesta 3</label>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="bubble flex">
-                <div class="bubble__number">
-                    <span>2</span>
+            <div class="questions__item">
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>7</span>
+                    </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_7-res1">
+                            <label for="p_7-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_7-res2">
+                            <label for="p_7-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_7-res3">
+                            <label for="p_7-res3">Respuesta 3</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="bubble__body">
-                    <h2>Title 1</h2>
-
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 1</span>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>8</span>
                     </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
 
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 2</span>
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_8-res1">
+                            <label for="p_8-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_8-res2">
+                            <label for="p_8-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_8-res3">
+                            <label for="p_8-res3">Respuesta 3</label>
+                        </div>
                     </div>
-
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 3</span>
+                </div>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>9</span>
                     </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
 
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_9-res1">
+                            <label for="p_9-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_9-res2">
+                            <label for="p_9-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_9-res3">
+                            <label for="p_9-res3">Respuesta 3</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>10</span>
+                    </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_10-res1">
+                            <label for="p_10-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_10-res2">
+                            <label for="p_10-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_10-res3">
+                            <label for="p_10-res3">Respuesta 3</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>11</span>
+                    </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_11-res1">
+                            <label for="p_11-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_11-res2">
+                            <label for="p_11-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_11-res3">
+                            <label for="p_11-res3">Respuesta 3</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>12</span>
+                    </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_12-res1">
+                            <label for="p_12-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_12-res2">
+                            <label for="p_12-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_12-res3">
+                            <label for="p_12-res3">Respuesta 3</label>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="bubble flex">
-                <div class="bubble__number">
-                    <span>3</span>
+
+            <div class="questions__item">
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>13</span>
+                    </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_13-res1">
+                            <label for="p_13-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_13-res2">
+                            <label for="p_13-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_13-res3">
+                            <label for="p_13-res3">Respuesta 3</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="bubble__body">
-                    <h2>Title 1</h2>
-                    
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 1</span>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>14</span>
                     </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
 
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 2</span>
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_14-res1">
+                            <label for="p_14-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_14-res2">
+                            <label for="p_14-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_14-res3">
+                            <label for="p_14-res3">Respuesta 3</label>
+                        </div>
                     </div>
-
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 3</span>
-                    </div>
-
                 </div>
-            </div>
-            <div class="bubble flex">
-                <div class="bubble__number">
-                    <span>4</span>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>15</span>
+                    </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_15-res1">
+                            <label for="p_15-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_15-res2">
+                            <label for="p_15-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_15-res3">
+                            <label for="p_15-res3">Respuesta 3</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="bubble__body">
-                    <h2>Title 1</h2>
-
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 1</span>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>16</span>
                     </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
 
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 2</span>
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_16-res1">
+                            <label for="p_16-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_16-res2">
+                            <label for="p_16-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_16-res3">
+                            <label for="p_16-res3">Respuesta 3</label>
+                        </div>
                     </div>
-
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 3</span>
-                    </div>
-
                 </div>
-            </div>
-            <div class="bubble flex">
-                <div class="bubble__number">
-                    <span>5</span>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>17</span>
+                    </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_17-res1">
+                            <label for="p_17-res1">Respuesta 1</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_17-res2">
+                            <label for="p_17-res2">Respuesta 2</label>
+                        </div>
+
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_17-res3">
+                            <label for="p_17-res3">Respuesta 3</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="bubble__body">
-                    <h2>Title 1</h2>
-                    
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 1</span>
+                <div class="bubble flex">
+                    <div class="bubble__number">
+                        <span>18</span>
                     </div>
+                    <div class="bubble__body">
+                        <h2>Title 1</h2>
 
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 2</span>
-                    </div>
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_18-res1">
+                            <label for="p_18-res1">Respuesta 1</label>
+                        </div>
 
-                    <div class="bubble__body-element">
-                        <input type="checkbox">
-                        <span>Respuesta 3</span>
-                    </div>
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_18-res2">
+                            <label for="p_18-res2">Respuesta 2</label>
+                        </div>
 
-                </div>
-            </div>
-            <div class="bubble flex">
-                <div class="bubble__number">
-                    <span>6</span>
-                </div>
-                <div class="bubble__body">
-                    <h2>Title 1</h2>
-                    
-                    <div class="bubble__body-element">
-                        <input type="checkbox" name="pregunta" id="res1">
-                        <label for="res1">Respuesta 1</label>
-                    </div>
-
-                    <div class="bubble__body-element">
-                        <input type="checkbox" name="pregunta" id="res2">
-                        <label for="res2">Respuesta 2</label>
-                    </div>
-
-                    <div class="bubble__body-element">
-                        <input type="checkbox" name="pregunta" id="res3">
-                        <label for="res3">Respuesta 3</label>
+                        <div class="bubble__body-element">
+                            <input type="checkbox" name="pregunta" id="p_18-res3">
+                            <label for="p_18-res3">Respuesta 3</label>
+                        </div>
                     </div>
                 </div>
             </div>
