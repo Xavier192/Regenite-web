@@ -5,6 +5,8 @@
     <circle id="Elipse_30" data-name="Elipse 30" cx="30.5" cy="30.5" r="30.5" transform="translate(1203 161)" fill="#fff"/>
     <circle id="Elipse_34" data-name="Elipse 34" cx="30.5" cy="30.5" r="30.5" transform="translate(1393 162)" fill="#fff"/>
     <circle id="Elipse_35" data-name="Elipse 35" cx="30.5" cy="30.5" r="30.5" transform="translate(1582 162)" fill="#fff"/>
-    <circle id="Elipse_33" data-name="Elipse 33" cx="16" cy="16" r="16" transform="translate(1408 177)" fill="#0bcade"/>
+    <circle id="Elipse_33" data-name="Elipse 33" cx="16" cy="16" r="16" transform="translate(1408 176)" fill="#0bcade"/>
+    <circle id="Elipse_36" data-name="Elipse 36" cx="16" cy="16" r="16" transform="translate(1218 176)" fill="#0bcade"/>
+    <rect id="Rectángulo_50" data-name="Rectángulo 50" width="161" height="6" transform="translate(1248 189)" fill="#0bcade"/>
   </g>
 </svg>
