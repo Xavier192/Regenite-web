@@ -1,0 +1,10 @@
+:root {
+    --primaryBlue: #0BBED1;
+    --primaryBlueHover:#0bafc2;
+    --transparentWhite: rgba(255, 255, 255, .96);
+    --fontColor: #333;
+    --titleSize: 2.3rem;
+    --textSize: 1.1rem;
+    --textSize-2: .9rem;
+    --titleSize-2: 1.3rem;
+}

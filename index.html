@@ -12,7 +12,7 @@
     <meta property="og:title" content="Regenite a company with future">
     <meta property="og:description" content="We are a nonprofit organization, our goal is to investigate genetics">
     <meta property="og:image" content="img/iceland.jpg">
-    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="css/home.css">
     <script src="js/script.js" defer></script>
     <script src="js/utilities.js" defer></script>
 </head>
@@ -48,198 +48,199 @@
     </nav>
 
     <!--************Carousel***************-->
+    <main>
+        <section class="carousel main-carousel white">
+            <div class="carousel__control--left control vertical-center flex">
+                <img src="img/flecha-atras.svg" alt="left-arrow">
+            </div>
 
-    <div class="carousel main-carousel white">
-        <div class="carousel__control--left control vertical-center flex">
-            <img src="img/flecha-atras.svg" alt="left-arrow">
-        </div>
+            <div class="carousel__control--right control vertical-center flex">
+                <img src="img/flecha-adelante.svg" alt="right-arrow">
+            </div>
 
-        <div class="carousel__control--right control vertical-center flex">
-            <img src="img/flecha-adelante.svg" alt="right-arrow">
-        </div>
-
-        <ul class="carousel__slide">
-            <li class="visible carousel__item">
-                <img src="img/carousel_2.jpg" alt="virus-image" class="carousel__img">
-                <div class="carousel__caption vertical-center">
-                    <div class="container">
-                        <div class="carousel__container-inner">
-                            <h1 class="title">Healing Using Virus</h1>
-                            <p class="text-1 pt-15 text-shadow">We are currently researching viruses to cure diseases.
-                            </p>
-                            <button type="button" class="btn btn-outline-white">Learn More</button>
+            <ul class="carousel__slide">
+                <li class="visible carousel__item">
+                    <img src="img/carousel_2.jpg" alt="virus-image" class="carousel__img">
+                    <div class="carousel__caption vertical-center">
+                        <div class="container">
+                            <div class="carousel__container-inner">
+                                <h1 class="title text-shadow">Healing Using Virus</h1>
+                                <p class="text-1 pt-15 text-shadow">We are currently researching viruses to cure
+                                    diseases.
+                                </p>
+                                <button type="button" class="btn btn-primary box-shadow">Learn More</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
-            <li class="carousel__item">
-                <img src="img/carousel_3.jpg" alt="cell-image" id="carousel__item-img-middle" class="carousel__img">
-                <div class="carousel__caption vertical-center">
-                    <div class="container">
-                        <div class="carousel__container-inner">
-                            <h2 class="title">Do our Test</h2>
-                            <p class="text-1 pt-15 text-shadow">Find out how much you know about genetics!</p>
-                            <button type="button" class="btn btn-outline-white">Test</button>
+                </li>
+                <li class="carousel__item">
+                    <img src="img/carousel_3.jpg" alt="cell-image" id="carousel__item-img-middle" class="carousel__img">
+                    <div class="carousel__caption vertical-center">
+                        <div class="container">
+                            <div class="carousel__container-inner">
+                                <h2 class="title text-shadow">Do our Test</h2>
+                                <p class="text-1 pt-15 text-shadow">Find out how much you know about genetics!</p>
+                                <button type="button" class="btn btn-primary box-shadow">Test</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
-            <li class="carousel__item">
-                <img src="img/carousel_1.jpg" alt="dna-image" class="carousel__img">
-                <div class="carousel__caption vertical-center">
-                    <div class="container">
-                        <div class="carousel__container-inner">
-                            <h1 class="title">Regenerate your DNA</h1>
-                            <p class="text-1 pt-15 text-shadow">Discover the latest investigations in dna restoration
-                                and technologies available in 2021.</p>
-                            <button type="button" class="btn btn-outline-white">Show More</button>
+                </li>
+                <li class="carousel__item">
+                    <img src="img/carousel_1.jpg" alt="dna-image" class="carousel__img">
+                    <div class="carousel__caption vertical-center">
+                        <div class="container">
+                            <div class="carousel__container-inner">
+                                <h1 class="title text-shadow">Regenerate your DNA</h1>
+                                <p class="text-1 pt-15 text-shadow">Discover the latest investigations in dna
+                                    restoration
+                                    and technologies available in 2021.</p>
+                                <button type="button" class="btn btn-primary box-shadow">Show More</button>
+                            </div>
                         </div>
                     </div>
+                </li>
+            </ul>
+
+            <div class="carousel__indicators">
+                <button type="button" class="carousel__indicator active"></button>
+                <button type="button" class="carousel__indicator"></button>
+                <button type="button" class="carousel__indicator"></button>
+            </div>
+        </section>
+
+        <!--***************************Two column section, welcome******************************-->
+
+        <section class="welcome padding">
+            <div class="container flex">
+                <div class="welcome__text flex-item">
+                    <h2 class="title">A team focused on results</h2>
+                    <img src="img/Title-border.png" alt="border">
+                    <p class="text-1">We are a nonprofit organization focused on investigation. Our mision is to solve
+                        hereditary and genetic diseases using the latest technologies. </p>
+                    <p class="text-1">We can't thank you enough for all the donations we're reciving, a project needs
+                        funding and we assure that this money is being used in the development of revolutionary technology.</p>
+                    <p class="text-1">Feel free to <span class="bold">contact us</span> if you have any suggestion or
+                        idea that you think can be
+                        interesting, we're also hiring so send us your resume and apply if you are interesten in working
+                        with us.</p>
+                    <button type="button" class="btn btn-primary">Contact us</button>
                 </div>
-            </li>
-        </ul>
+                <div class="img-cover flex-item">
+                    <img src="img/laboratorio.jpg" alt="Imagen de marca">
+                </div>
+            </div>
+        </section>
 
-        <div class="carousel__indicators">
-            <button type="button" class="carousel__indicator active"></button>
-            <button type="button" class="carousel__indicator"></button>
-            <button type="button" class="carousel__indicator"></button>
-        </div>
-    </div>
+        <!--*****************************Three column section*********************************-->
 
-    <!--***************************Two column section, welcome******************************-->
-
-    <section class="welcome padding">
-        <div class="container flex">
-            <div class="welcome__text flex-item">
-                <h2 class="title">A team focused on results</h2>
+        <section class="disocveries p-1">
+            <div class="discoveries__title container">
+                <h2 class="title">Our discoveries</h2>
                 <img src="img/Title-border.png" alt="border">
-                <p class="text-1">We are a nonprofit organization focused on investigation. Our mision is to solve
-                    hereditary and genetic diseases using the latest technologies. </p>
-                <p class="text-1">Feel free to contact us if you have any suggestion or idea that you think can be
-                    interesting, we're also hiring so send us your resume and apply if you are interesten in working
-                    with us.</p>
-                <button type="button" class="btn btn-primary">Contact us</button>
             </div>
-            <div class="img-cover flex-item">
-                <img src="img/laboratorio.jpg" alt="Imagen de marca">
+
+            <div class="container grid">
+
+                <div class="card">
+                    <div class="card__body">
+                        <img src="img/scientist.jpg" alt="laboratory-image">
+                    </div>
+                    <div class="card__footer">
+                        <h3 class="title-2">Genetic cancer fixed in mice</h3>
+                        <p class="text-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum
+                            minima maxime, dolore, eligendi doloribus placeat eos perferendis reiciendis dolorum ullam
+                            aliquam tempora iste quidem? Esse corrupti cum ullam doloribus tempora!
+                            Obcaecati saepe est doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                            alias quas dicta quaerat, .</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__body">
+                        <img src="img/cells.jpg" alt="laboratory-image">
+                    </div>
+                    <div class="card__footer">
+                        <h3 class="title-2">Genetic cancer fixed in mice</h3>
+                        <p class="text-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum
+                            minima maxime, dolore, eligendi doloribus placeat eos perferendis reiciendis dolorum ullam
+                            aliquam tempora iste quidem? Esse corrupti cum ullam doloribus tempora!
+                            Obcaecati . Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod impedit possimus
+                            aliquam error molestias dolorem unde.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__body">
+                        <img src="img/carousel_21.jpg" alt="laboratory-image">
+                    </div>
+                    <div class="card__footer">
+                        <h3 class="title-2">Genetic cancer fixed in mice</h3>
+                        <p class="text-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum
+                            minima maxime, dolore, eligendi doloribus placeat eos perferendis reiciendis dolorum ullam
+                            aliquam tempora iste quidem? Esse corrupti cum ullam doloribus tempora!
+                            Obcaecati saepe . Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Possimus, officia.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--*****************************Three column section*********************************-->
+        <!--********************Fixed background section**********************-->
 
-    <section class="disocveries p-1">
-        <div class="discoveries__title center">
-            <h2 class="title">Our discoveries</h2>
-            <hr class="my-4">
-        </div>
-
-        <div class="container grid">
-
-            <div class="card">
-                <div class="card__body">
-                    <img src="img/scientist.jpg" alt="laboratory-image">
-                </div>
-                <div class="card__footer">
-                    <h3 class="title-2">Genetic cancer fixed in mice</h3>
-                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum
-                        minima maxime, dolore, eligendi doloribus placeat eos perferendis reiciendis dolorum ullam
-                        aliquam tempora iste quidem? Esse corrupti cum ullam doloribus tempora!
-                        Obcaecati saepe est doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                        alias quas dicta quaerat, .</p>
-                </div>
+        <section class="fixed-background">
+            <div class="background">
+                <div class="mask"></div>
             </div>
-            <div class="card">
-                <div class="card__body">
-                    <img src="img/cells.jpg" alt="laboratory-image">
+            <div class="vertical-center content">
+                <h2 class="title">Our <span class="fixed-background__color">Tests</span></h2>
+                <p class="text-1">Check out our tests to prove your knowledge about science and technology.</p>
+                <a href="tests.html" class="btn btn-primary">Try It</a>
+            </div>
+        </section>
+
+        <!--********************Two column news section***********************-->
+
+        <section class="news padding">
+            <div class="container flex">
+                <div class="img-cover flex-item">
+                    <img src="img/bacteria.jpg" alt="Imagen de marca">
                 </div>
-                <div class="card__footer">
-                    <h3 class="title-2">Genetic cancer fixed in mice</h3>
-                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum
-                        minima maxime, dolore, eligendi doloribus placeat eos perferendis reiciendis dolorum ullam
-                        aliquam tempora iste quidem? Esse corrupti cum ullam doloribus tempora!
-                        Obcaecati . Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod impedit possimus
-                        aliquam error molestias dolorem unde.
+                <div class="flex-item">
+                    <h2 class="title">Intestinal flora is important for the development.</h2>
+                    <img src="img/Title-border.png" alt="border">
+                    <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor
+                        doloribus asperiores explicabo! Est, commodi! Possimus, impedit corporis quidem quae
+                        accusamus quis excepturi ipsa eum accusantium deserunt! Voluptas, voluptatem nobis.
                     </p>
+                    <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor
+                        exercitationem magni, incidunt itaque quae asperiores impedit consequuntur atque in non
+                        laborum, nostrum dolore accusamus laudantium molestias! Dignissimos, consequuntur
+                        asperiores.</p>
+                    <button type="button" class="btn btn-primary">Read More</button>
                 </div>
+
             </div>
-            <div class="card">
-                <div class="card__body">
-                    <img src="img/carousel_21.jpg" alt="laboratory-image">
-                </div>
-                <div class="card__footer">
-                    <h3 class="title-2">Genetic cancer fixed in mice</h3>
-                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eum
-                        minima maxime, dolore, eligendi doloribus placeat eos perferendis reiciendis dolorum ullam
-                        aliquam tempora iste quidem? Esse corrupti cum ullam doloribus tempora!
-                        Obcaecati saepe . Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Possimus, officia.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!--********************Fixed background section**********************-->
-
-    <section class="fixed-background">
-        <div class="background">
-            <div class="mask"></div>
-        </div>
-        <div class="vertical-center content">
-            <h2 class="title">Our Tests</h2>
-            <p class="text-1">Check out our tests to prove your knowledge about science and technology.</p>
-            <a href="tests.html" class="btn btn-primary">Try It</a>
-        </div>
-    </section>
-
-    <!--********************Two column news section***********************-->
-
-    <section class="news padding">
-        <div class="container flex">
-            <div class="img-cover flex-item">
-                <img src="img/bacteria.jpg" alt="Imagen de marca">
-            </div>
-            <div class="flex-item">
-                <h2 class="title">Intestinal flora is important for the development.</h2>
-                <img src="img/Title-border.png" alt="border">
-                <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor
-                    doloribus asperiores explicabo! Est, commodi! Possimus, impedit corporis quidem quae
-                    accusamus quis excepturi ipsa eum accusantium deserunt! Voluptas, voluptatem nobis.
-                </p>
-                <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor
-                    exercitationem magni, incidunt itaque quae asperiores impedit consequuntur atque in non
-                    laborum, nostrum dolore accusamus laudantium molestias! Dignissimos, consequuntur
-                    asperiores.</p>
-                <button type="button" class="btn btn-primary">Read More</button>
-            </div>
-
-        </div>
-    </section>
-
-
+    </main>
     <!--***********************Footer************************-->
 
     <footer class="footer">
         <div class="container grid">
-            <div class="grid-item center">
-                <img src="img/logo-footer.svg" class="footer__logo" alt="logo">
-                <hr class="footer__border">
+            <div class="grid-item">
+                <img src="img/logo.svg" class="footer__logo" alt="logo">
                 <p>875 - 321 - 123</p>
                 <p>regenite@gmail.com</p>
                 <p>102 Carrer de sa ma, 07100</p>
             </div>
-            <div class="grid-item center">
-                <hr class="footer__border">
+            <div class="grid-item">
                 <h3>Schedule</h3>
-                <hr class="footer__border">
                 <p>Monday : 8am - 5pm</p>
                 <p>Friday : 9am - 6pm</p>
                 <p>Sunday : 10am - 05pm</p>
             </div>
-            <div class="grid-item center">
-                <hr class="footer__border">
+            <div class="grid-item">
                 <h3>Contact</h3>
-                <hr class="footer__border">
                 <p>regenite@gmail.com</p>
                 <p>Tlf: 623134212</p>
                 <div class="footer__redes">
@@ -254,7 +255,6 @@
                     </a>
                 </div>
             </div>
-
         </div>
         <div class="subfooter flex">
             <span>@Copyright 2021 - Xavier Lliteras</span>

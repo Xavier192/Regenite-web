@@ -23,7 +23,8 @@ body{
     text-align:center;
 }
 
-/*********Questions section************/
+/***********Questions section************/
+
 .questions{
     height:1450px;
     position:relative;
@@ -92,6 +93,7 @@ label{
 .pagination{
     height:100px;
 }
+
 .pagination__buttons{
     position:relative;
     width:250px;
@@ -107,6 +109,7 @@ label{
     position:absolute;
     left:0;
 }
+
 .pagination__button--right{
     position:absolute;
     right:0;

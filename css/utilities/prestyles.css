@@ -1,0 +1,41 @@
+/****************INDEX********************
+
+- 1. reset css.
+- 2. Prestyling tags.
+
+******************************************/
+
+/***********************Reset css********************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**********************Prestyling tags*****************/
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--fontColor);
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 10px 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--fontColor);
+}

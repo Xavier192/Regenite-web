@@ -15,8 +15,7 @@ include('phpTests/cargarTests.php');
     <meta property="og:title" content="Our Tests">
     <meta property="og:description" content="¡Find out how much you know!">
     <meta property="og:image" content="img/carousel_3.jpg">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/tests.css">
+    <link type="text/css" rel="stylesheet" href="css/tests.css">
     <script src="js/utilities.js" defer></script>
     <script src="js/testsScript.js" defer></script>
 </head>
@@ -74,32 +73,6 @@ include('phpTests/cargarTests.php');
                     <a href="tests.html" class="breadcrumb__link bold">Tests</a>
                 </li>
             </ul>
-        </div>
-    </section>
-
-    
-    <!--***********Two column section welcome*********-->
-    <section class="welcome-section">
-        <div class="container">
-            <div class="flex box-shadow">
-            <div class="flex-item img-cover">
-                <img src="img/dna-tests.jpg" alt="dna test">
-            </div>
-            <div class="flex-item">
-                <h1 class="title">Our Tests</h1>
-                <img src="img/Title-border.png" alt="border title">
-                <p class="text-1">
-                We are a nonprofit organization focused
-                on investigation. Our mision is to solve
-                hereditary and genetic diseases using the
-                latest technologies. Feel free to contact
-                us if you have any suggestion or idea that
-                you think can be interesting, we're also hiring
-                so send us your resume and apply if you are
-                interesten in working with us.
-                </p>
-            </div>
-            </div>
         </div>
     </section>
 

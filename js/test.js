@@ -63,7 +63,7 @@ function refactorClock(min,sec){
 
 function moverPreguntas(){
     carouselItems.forEach( (item,index) => item.style.left = width*index+'px');
-    carouselContainer.style.transition = 'transform 1s ease-in-out';
+    carouselContainer.style.transition = 'transform .65s ease-in-out';
 }
 
 function progresoAdelante(){
