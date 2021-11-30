@@ -76,6 +76,15 @@ Note: To see navbar, footer and reusable blocs see utilities.css
 .fixed-background__image{
     width:270px;
     height:270px;
+    flex:1;
+}
+
+.fixed-background .btn{
+    padding:10px 70px;
+}
+
+.fixed-background__text{
+    flex:1;
 }
 
 .fixed-background__image img{

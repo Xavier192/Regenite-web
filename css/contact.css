@@ -1,0 +1,71 @@
+@import 'utilities/utilities.css';
+
+/*PRESTYLING*/
+label{
+    display:block;
+}
+
+h2{
+    font-size:var(--titleSize);
+    line-height:2;
+}
+
+.contact .flex{
+    align-items:flex-start;
+}
+
+.flex{
+    gap:100px;
+}
+
+.underline{
+    width:50%;
+    color:var(--primaryBlue);
+    margin-bottom:20px;
+}
+
+.contact__input{
+    width:100%;
+    padding:15px;
+    margin-top:10px;
+    outline-color:#ededed;
+    outline:1px solid #adadad;
+    border:none;
+}
+
+.contact__element{
+    margin-bottom:25px;
+    gap:20px;
+}
+
+.contact__name, .contact__email{
+    flex:1;
+}
+
+.contact__input[type="submit"]{
+    outline:none;
+    background-color:var(--primaryBlue);
+    color:#fff;
+    border-radius:5px;
+    padding:20px 0;
+    font-weight:700;
+    font-size:var(--textSize);
+    cursor:pointer;
+    transition:background-color .2s;
+}
+
+.contact__input[type="submit"]:hover{
+    background-color:var(--primaryBlueHover);
+}
+
+.contact__social{
+    margin-top:20px;
+}
+.contact__icon{
+    margin-right:20px;
+}
+
+.padding{
+    padding-top:170px;
+    padding-bottom:170px;
+}
