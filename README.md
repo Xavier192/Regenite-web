@@ -2,10 +2,6 @@
 
 Regenite web is a supposed website of a medical non profit organization. This project is under development. There's no database for the moment.
 
-## Project visualization
-
-Demo: https://xavier192.github.io/Regenite-web/
-
 ##Screenshot
 
 ![](./screenshot.jpg)
@@ -28,3 +24,7 @@ Just click on the demo url.
 ## Authors ✒️
 
 * Xavier
+
+## Project visualization
+
+Demo: https://xavier192.github.io/Regenite-web/
