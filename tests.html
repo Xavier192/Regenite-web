@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<?php
-include('phpTests/cargarTests.php');
-?>
 <html lang="en">
 
 <head>
@@ -38,13 +35,13 @@ include('phpTests/cargarTests.php');
                     <a href="index.html" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Contact</a>
+                    <a href="contact.html" class="nav__link">Contact</a>
                 </li>
                 <li class="nav__item">
-                    <a href="tests.php" class="nav__link">Tests</a>
+                    <a href="#" class="nav__link">Tests</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__button white">DONATE</a>
+                    <a href="donate.html" class="nav__button white">DONATE</a>
                 </li>
             </ul>
         </div>
@@ -78,8 +75,10 @@ include('phpTests/cargarTests.php');
 
     <!--Section title Tests-->
      <section class="title__section">
-        <h2 class="title">Tests</h2>
-        <hr class="my-4">
+         <div class="container">
+            <h2 class="title">Tests</h2>
+            <hr class="my-4">
+         </div>
     </section>
 
     <!--*******Search section*********-->
@@ -105,18 +104,57 @@ include('phpTests/cargarTests.php');
                         </tr>
                     </thead>
                     <tbody>
-                        <?php
-                        
-                        foreach($consulta as $fila){
-                            echo "<tr>
-                                    <td><img src=\"".$fila['urlImagen']."\"></td>
-                                    <td class=\"tests__title\">".$fila['titulo']."</td>
-                                    <td>".$fila['descriptcion']."</td>
-                                    <td>12</td>
-                                  </tr>";
-                        }
-                        ?>
-                    </tbody>
+                    <tr>
+                        <td>
+                            <img src="img/test-genoma.png" alt="genoma-img">
+                        </td>
+                        <td class="tests__title">Genoma</td>
+                        <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/test-cell-function.png" alt="cell-img">
+                        </td>
+                        <td class="tests__title">Cell function</td>
+                        <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/test-regenerative.png" alt="regenerative-cicle">
+                        </td>
+                        <td class="tests__title">Regenerative medicine</td>
+                        <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/test-organ.png" alt="lungs-img">
+                        </td>
+                        <td class="tests__title">Organ function</td>
+                        <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/test-virus.png" alt="virus-img">
+                        </td>
+
+                        <td class="tests__title">Virus</td>
+                        <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/test-bacteria.png" alt="bacteria-img">
+                        </td>
+
+                        <td class="tests__title">Bacteria</td>
+                        <td>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
+                        <td>32</td>
+                    </tr>
+                </tbody>
                 </table>
         </div>
     </section>
