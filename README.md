@@ -6,6 +6,10 @@ Regenite web is a supposed website of a medical non profit organization. This pr
 
 Demo: https://xavier192.github.io/Regenite-web/
 
+##Screenshot
+
+![](./screenshot.jpg)
+
 ## How to execute the project 🔧
 
 Just click on the demo url.
