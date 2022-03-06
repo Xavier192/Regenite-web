@@ -214,8 +214,6 @@
     position:relative;
 }
 
-
-
 .nav__link:after, .nav__active:after{
     content: "";
     position: absolute;
