@@ -61,30 +61,22 @@ Note: To see navbar, footer and reusable blocs see utilities.css
     position: relative;
 }
 
-.fixed-background .flex{
-    justify-content: space-between;
-}
-
-.fixed-background__content {
-    width:100%;
-}
-
-.fixed-background__container{
-    width:100%;
-}
-
-.fixed-background__image{
-    width:270px;
-    height:270px;
-    flex:1;
-}
-
 .fixed-background .btn{
     padding:10px 70px;
 }
 
 .fixed-background__text{
-    flex:1;
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+}
+
+.fixed-background__text .container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
 }
 
 .fixed-background__image img{
@@ -106,4 +98,65 @@ Note: To see navbar, footer and reusable blocs see utilities.css
     background-position:center;
     height: 100%;
     width:100%;
+}
+
+/******************News slider*****************/
+
+.news__control{
+    padding:20px;
+    display:inline-block;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border:none;
+    background-color: transparent;
+    cursor:pointer;
+}
+
+.news__control--left{
+    background-image:url(../img/left-arrow.svg);
+}
+
+.news__control--right{
+    background-image:url(../img/right-arrow.svg);
+}
+
+.news{
+    position:relative;
+}
+
+.news .container{
+    overflow:hidden;
+}
+
+.news__slider{
+    display:flex;
+    gap:20px;
+    width:100%;
+}
+
+.news__new{
+    flex:1;
+    min-width:100%;
+}
+
+.news__indicators{
+    position:absolute;
+    bottom:25px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:30px;
+}
+
+.news__indicator{
+    padding:9px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    margin-top:3px;
+}
+
+.news__indicator--active{
+    background-color:#cacaca;
 }

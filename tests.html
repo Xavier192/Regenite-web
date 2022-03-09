@@ -19,33 +19,34 @@
 
 <body>
     <!--**********Navigation bar************-->
-
-    <nav class="nav">
-        <div class="container flex">
-            <div class="mobile-flex">
-                <div class="nav__logo">
-                    <a href="index.html"><img src="img/logo.svg" alt="logo-regenite" class="nav__logo-img"></a>
+    <header class="header">
+        <nav class="nav">
+            <div class="container flex">
+                <div class="mobile-flex">
+                    <div class="nav__logo">
+                        <a href="index.html"><img src="img/logo.svg" alt="logo-regenite" class="nav__logo-img"></a>
+                    </div>
+                    <div class="nav__hamburger">
+                        <img src="img/hamburger.svg" alt="display menu icon">
+                    </div>
                 </div>
-                <div class="nav__hamburger">
-                    <img src="img/hamburger.svg" alt="display menu icon">
-                </div>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__active">Tests</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="donate.html" class="nav__button white">DONATE</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav__menu">
-                <li class="nav__item">
-                    <a href="index.html" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="contact.html" class="nav__link">Contact</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link nav__active">Tests</a>
-                </li>
-                <li class="nav__item">
-                    <a href="donate.html" class="nav__button white">DONATE</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!--***********Image welcome************-->
 
@@ -74,11 +75,11 @@
     </section>
 
     <!--Section title Tests-->
-     <section class="title__section">
-         <div class="container">
+    <section class="title__section">
+        <div class="container">
             <h2 class="title">Tests</h2>
             <hr class="my-4">
-         </div>
+        </div>
     </section>
 
     <!--*******Search section*********-->
@@ -94,16 +95,16 @@
     <!--*******Table section***********-->
     <section class="tests">
         <div class="container">
-                <table class="tests__table br-12">
-                    <thead>
-                        <tr>
-                            <th>Photo</th>
-                            <th>Title</th>
-                            <th>Description</th>
-                            <th>Nº questions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <table class="tests__table br-12">
+                <thead>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Nº questions</th>
+                    </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td>
                             <img src="img/test-genoma.png" alt="genoma-img">
@@ -155,7 +156,7 @@
                         <td>32</td>
                     </tr>
                 </tbody>
-                </table>
+            </table>
         </div>
     </section>
 

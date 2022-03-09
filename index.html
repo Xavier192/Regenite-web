@@ -14,38 +14,39 @@
     <meta property="og:image" content="img/iceland.jpg">
     <link type="text/css" rel="stylesheet" href="css/home.css">
     <script src="js/utilities.js" defer></script>
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
     <!--**********Navigation bar************-->
-
-    <nav class="nav">
-        <div class="container flex">
-            <div class="mobile-flex">
-                <div class="nav__logo">
-                    <a href="#"><img src="img/logo.svg" alt="logo-regenite" class="nav__logo-img"></a>
+    <header class="header">
+        <nav class="nav">
+            <div class="container flex">
+                <div class="mobile-flex">
+                    <div class="nav__logo">
+                        <a href="#"><img src="img/logo.svg" alt="logo-regenite" class="nav__logo-img"></a>
+                    </div>
+                    <div class="nav__hamburger">
+                        <img src="img/hamburger.svg" alt="display menu icon">
+                    </div>
                 </div>
-                <div class="nav__hamburger">
-                    <img src="img/hamburger.svg" alt="display menu icon">
-                </div>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="tests.html" class="nav__link">Tests</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="donate.html" class="nav__button white">DONATE</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav__menu">
-                <li class="nav__item">
-                    <a href="#" class="nav__link nav__active">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="contact.html" class="nav__link">Contact</a>
-                </li>
-                <li class="nav__item">
-                    <a href="tests.html" class="nav__link">Tests</a>
-                </li>
-                <li class="nav__item">
-                    <a href="donate.html" class="nav__button white">DONATE</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+        </nav>
+    </header>
     <!--************Carousel***************-->
     <main>
         <section class="carousel main-carousel white">
@@ -67,7 +68,7 @@
                                 <p class="text-1 pt-15 text-shadow">We are currently researching viruses to cure
                                     diseases.
                                 </p>
-                                <a class="btn btn-primary box-shadow">Learn More</a>
+                                <a class="btn btn-primary">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -79,7 +80,7 @@
                             <div class="carousel__container-inner">
                                 <h2 class="title text-shadow">Do our Test</h2>
                                 <p class="text-1 pt-15 text-shadow">Find out how much you know about genetics!</p>
-                                <a href="tests.html" class="btn btn-primary box-shadow">Test</a>
+                                <a href="tests.html" class="btn btn-primary">Test</a>
                             </div>
                         </div>
                     </div>
@@ -93,7 +94,7 @@
                                 <p class="text-1 pt-15 text-shadow">Discover the latest investigations in dna
                                     restoration
                                     and technologies available in 2021.</p>
-                                <a class="btn btn-primary box-shadow">Show More</a>
+                                <a class="btn btn-primary">Show More</a>
                             </div>
                         </div>
                     </div>
@@ -190,41 +191,103 @@
             <div class="background">
                 <div class="mask"></div>
             </div>
-            <div class="vertical-center fixed-background__container">
-                <div class="fixed-background__content flex container">
-                    <div class="fixed-background__image">
-                        <img src="img/test.jpg" alt="test">
-                    </div>
-                    <div class="fixed-background__text">
-                        <h2 class="title">Our <span class="fixed-background__color">Tests</span></h2>
-                        <p class="text-1">We've been collecting a large database of tests, check them out</p>
-                        <a href="tests.html" class="btn btn-primary">Try It</a>
-                    </div>
+            <div class="fixed-background__text">
+                <div class="container">
+                    <h2 class="title">Our <span class="fixed-background__color">Tests</span></h2>
+                    <p class="text-1">We've been collecting a large database of tests, check them out</p>
+                    <a href="tests.html" class="btn btn-primary">Try It</a>
                 </div>
             </div>
+
         </section>
 
         <!--********************Two column news section***********************-->
 
         <section class="news padding">
-            <div class="container flex">
-                <div class="img-cover flex-item">
-                    <img src="img/bacteria.jpg" alt="Imagen de marca">
-                </div>
-                <div class="flex-item">
-                    <h2 class="title">Intestinal flora is important for the development.</h2>
-                    <img src="img/Title-border.png" alt="border">
-                    <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor
-                        doloribus asperiores explicabo! Est, commodi! Possimus, impedit corporis quidem quae
-                        accusamus quis excepturi ipsa eum accusantium deserunt! Voluptas, voluptatem nobis.
-                    </p>
-                    <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor
-                        exercitationem magni, incidunt itaque quae asperiores impedit consequuntur atque in non
-                        laborum, nostrum dolore accusamus laudantium molestias! Dignissimos, consequuntur
-                        asperiores.</p>
-                    <button type="button" class="btn btn-primary">Read More</button>
-                </div>
+            
+            <div class="news__indicators">
+                <button type="button" class="news__control news__control--left"></button>
+                <button type="button" class="news__indicator news__indicator--active"></button>
+                <button type="button" class="news__indicator"></button>
+                <button type="button" class="news__control news__control--right"></button>
+            </div>
+            <div class="container">
+                <div class="news__slider">
+                    <div class="news__new flex">
+                        <div class="img-cover flex-item">
+                            <img src="img/trees.jpg" alt="Imagen de marca">
+                        </div>
+                        <div class="flex-item">
+                            <h2 class="title">Intestinal flora is important for the development.</h2>
+                            <img src="img/Title-border.png" alt="border">
+                            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor
+                                doloribus asperiores explicabo! Est, commodi! Possimus, impedit corporis quidem quae
+                                accusamus quis excepturi ipsa eum accusantium deserunt! Voluptas, voluptatem nobis.
+                            </p>
+                            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor
+                                exercitationem magni, incidunt itaque quae asperiores impedit consequuntur atque in non
+                                laborum, nostrum dolore accusamus laudantium molestias! Dignissimos, consequuntur
+                                asperiores.</p>
+                            <button type="button" class="btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                    <div class="news__new flex">
 
+                        <div class="img-cover flex-item">
+                            <img src="img/bacteria.jpg" alt="Imagen de marca">
+                        </div>
+                        <div class="flex-item">
+                            <h2 class="title">Intestinal flora is important for the development.</h2>
+                            <img src="img/Title-border.png" alt="border">
+                            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor
+                                doloribus asperiores explicabo! Est, commodi! Possimus, impedit corporis quidem quae
+                                accusamus quis excepturi ipsa eum accusantium deserunt! Voluptas, voluptatem nobis.
+                            </p>
+                            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor
+                                exercitationem magni, incidunt itaque quae asperiores impedit consequuntur atque in non
+                                laborum, nostrum dolore accusamus laudantium molestias! Dignissimos, consequuntur
+                                asperiores.</p>
+                            <button type="button" class="btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                    <div class="news__new flex">
+                        <div class="img-cover flex-item">
+                            <img src="img/trees.jpg" alt="Imagen de marca">
+                        </div>
+                        <div class="flex-item">
+                            <h2 class="title">Intestinal flora is important for the development.</h2>
+                            <img src="img/Title-border.png" alt="border">
+                            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor
+                                doloribus asperiores explicabo! Est, commodi! Possimus, impedit corporis quidem quae
+                                accusamus quis excepturi ipsa eum accusantium deserunt! Voluptas, voluptatem nobis.
+                            </p>
+                            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor
+                                exercitationem magni, incidunt itaque quae asperiores impedit consequuntur atque in non
+                                laborum, nostrum dolore accusamus laudantium molestias! Dignissimos, consequuntur
+                                asperiores.</p>
+                            <button type="button" class="btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                    <div class="news__new flex">
+
+                        <div class="img-cover flex-item">
+                            <img src="img/bacteria.jpg" alt="Imagen de marca">
+                        </div>
+                        <div class="flex-item">
+                            <h2 class="title">Intestinal flora is important for the development.</h2>
+                            <img src="img/Title-border.png" alt="border">
+                            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor
+                                doloribus asperiores explicabo! Est, commodi! Possimus, impedit corporis quidem quae
+                                accusamus quis excepturi ipsa eum accusantium deserunt! Voluptas, voluptatem nobis.
+                            </p>
+                            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor
+                                exercitationem magni, incidunt itaque quae asperiores impedit consequuntur atque in non
+                                laborum, nostrum dolore accusamus laudantium molestias! Dignissimos, consequuntur
+                                asperiores.</p>
+                            <button type="button" class="btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
