@@ -39,6 +39,10 @@
     padding-bottom: 15px;
 }
 
+.welcome .text-1, .news .text-1{
+    color:#535353;
+}
+
 .text-2{
     font-size:var(--textSize-2);
     font-weight:400;
