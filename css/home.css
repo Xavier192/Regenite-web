@@ -139,6 +139,11 @@ Note: To see navbar, footer and reusable blocs see utilities.css
     min-width:100%;
 }
 
+.news__bubbles{
+    display:flex;
+    gap:20px;
+}
+
 .news__indicators{
     position:absolute;
     bottom:25px;
