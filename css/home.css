@@ -165,3 +165,10 @@ Note: To see navbar, footer and reusable blocs see utilities.css
 .news__indicator--active{
     background-color:#cacaca;
 }
+
+@media screen and (max-width:406px){
+
+    .news .flex-item{
+        min-width:270px;
+    }
+}
