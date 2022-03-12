@@ -10,10 +10,6 @@ h2{
     line-height:2;
 }
 
-.contact .flex{
-    align-items:flex-start;
-}
-
 .flex{
     gap:100px;
 }
@@ -68,4 +64,85 @@ h2{
 .padding{
     padding-top:170px;
     padding-bottom:170px;
+}
+
+main{
+    background-color:#fbfbfb;
+}
+
+.contact__form{
+    background-color:#fff;
+    padding:60px 60px 40px 60px;
+    border-radius:13px;
+    box-shadow:0 0 10px #aaa;
+}
+
+.contact__submit{
+    padding:20px 0;
+    width:100%;
+    margin-top:30px;
+}
+
+textarea{
+    resize:none;
+}
+
+.contact__grey{
+    color:#7a7a7a;
+}
+
+.contact__description{
+    padding-bottom:20px;
+}
+
+.contact__adress{
+    margin-bottom:22px;
+}
+
+.contact img{
+    width:32px;
+    vertical-align: middle;
+    margin-right:10px;
+}
+
+.contact__adress img{
+    width:28px;
+} 
+
+.contact__social img{
+    width:38px;
+}
+
+.contact__social a{
+    display:block;
+    padding:7px 0;
+}
+
+.contact__tlf p{
+    padding:7px 0;
+}
+
+@media screen and (max-width:650px){
+    .contact__name, .contact__email{
+        flex-basis:100%;
+    }
+
+    .contact__form{
+        box-shadow:none;
+        border-radius:0;
+        padding:60px 30px 40px 30px;
+    }
+
+    .padding{
+        padding-top:70px;
+    }
+
+    .contact .container{
+        padding:0;
+    }
+
+    .contact__text{
+        padding:0 20px;
+    }
+
 }
