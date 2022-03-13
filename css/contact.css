@@ -70,7 +70,7 @@ main{
     background-color:#fbfbfb;
 }
 
-.contact__form{
+.contact__card{
     background-color:#fff;
     padding:60px 60px 40px 60px;
     border-radius:13px;
@@ -96,7 +96,15 @@ textarea{
 }
 
 .contact__adress{
-    margin-bottom:22px;
+    height:400px;
+}
+
+.contact__adress h3{
+    margin-bottom:30px;
+}
+
+.contact__adress img{
+    margin-right:15px;
 }
 
 .contact img{
@@ -122,12 +130,17 @@ textarea{
     padding:7px 0;
 }
 
+.contact__separator{
+    border:1px solid #cacaca;
+    margin:31px 0;
+}
+
 @media screen and (max-width:650px){
     .contact__name, .contact__email{
         flex-basis:100%;
     }
 
-    .contact__form{
+    .contact__card{
         box-shadow:none;
         border-radius:0;
         padding:60px 30px 40px 30px;
