@@ -5,11 +5,14 @@ const newsCarousel = function () {
     const carouselContainer = document.querySelector('.news__slider');
     const indicator = document.querySelector('.news__bubbles');
     const indicators = document.querySelectorAll('.news__indicator');
-    let width = carouselContainer.clientWidth;
+    let width = 0;
     let sliderCount = 1;
     let indicatorCount = 0;
 
-    carouselContainer.style.transform = `translateX(-${(width + 20) * sliderCount}px)`;
+    window.onload = function(){
+        width = carouselContainer.clientWidth;
+        carouselContainer.style.transform = `translateX(-${(width + 20) * sliderCount}px)`;
+    }
 
     window.onresize = function () {
         width = carouselContainer.clientWidth;
