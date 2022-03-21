@@ -108,68 +108,37 @@
             </div>
         </section>
 
-
+        <!--*********************Donation section*************************-->
         <section class="donate padding">
-            <div class="container">
-                <h2>Make a donation</h2>
-                <hr class="underline">
-                <p class="donate__paragraph">We can't thank you enough for all the donations we're reciving, we're
-                    investing a lot of money in the development of revolutionary technology. </p>
-            </div>
-        </section>
-
-        <section class="amount">
-            <div class="container">
-                <div class="flex flex-amount">
-                    <div class="amount__donation">
-                        <h2 class="subtitle">Donation amount</h2>
-                        <div class="grid">
-                            <div class="grid-item" id="selected"><span>5$</span></div>
-                            <div class="grid-item"><span>10$</span></div>
-                            <div class="grid-item"><span>25$</span></div>
-                            <div class="grid-item"><span>100$</span></div>
-                            <div class="grid-item"><span>200$</span></div>
-                            <div class="grid-item"><span>500$</span></div>
-                        </div>
-                    </div>
-                    <div class="identity">
-                        <h2 class="subtitle">I am an</h2>
-                        <div class="flex">
-                            <div class="identity__item" id="selected">Individual</div>
-                            <div class="identity__item">Organization</div>
-                        </div>
+            <div class="container flex">
+                <div class="donate__decoration">
+                    <img src="img/donate.jpg" alt="donate">
+                    <div class="donate__text">
+                        <h2 class="title">Make a donation</h2>
+                        <p class="donate__paragraph">We can't thank you enough for all the donations we've been reciving, we're
+                        investing a lot of money in the development of revolutionary technology.
+                        </p>
+                        <p class="donate__paragraph">Your support will help us in our mission to investigate new technologies. Every little effort matters and with the support of everyone we can build amazing things!</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="identity">
-            <div class="container">
-
-            </div>
-        </section>
-
-        <section class="data padding">
-            <div class="container">
-                <h2 class="subtitle">Your contact data</h2>
-                <form class="data__form">
-                    <div class="data__element flex">
-                        <div class="data__name">
-                            <label for="name">NAME *</label>
-                            <input type="text" class="data__input" id="name">
-                        </div>
-                        <div class="data__email">
-                            <label for="email">EMAIL *</label>
-                            <input type="text" class="data__input" id="email">
-                        </div>
-
+                <form class="donate__controls flex-item">
+                    <h2 class="title donate__title"><img src="img/hand.svg" alt="">Donate</h2>
+                    <h3>I'm am an</h3>
+                    <div class="donate__organization flex">
+                        <button type="button" class="btn btn-primary">Individual</button>
+                        <button type="button" class="btn">Organization</button>
                     </div>
-                    <div class="data__element">
-                        <label for="message">MESSAGE FOR US (optional)</label>
-                        <textarea rows="15" class="data__input" id="message"></textarea>
-                    </div>
-                    <div class="data__element">
-                        <input type="submit" value="DONATE" class="data__input">
+                    <h3>Donation amount</h3>
+                    <div class="donate__amount">
+                        <button type="button" class="btn btn-primary">5$</button>
+                        <button type="button" class="btn">10$</button>
+                        <button type="button" class="btn">20$</button>
+                        <button type="button" class="btn">50$</button>
+                        <button type="button" class="btn">100$</button>
+                        <button type="button" class="btn">250$</button>
+                        <button type="button" class="btn">500$</button>
+                        <input type="text" placeholder="Other amount" class="donate__input">
+                        <input type="submit" class="btn" value="Donate">
                     </div>
                 </form>
             </div>

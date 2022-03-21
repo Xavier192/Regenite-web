@@ -5,115 +5,78 @@ label{
     display:block;
 }
 
-.underline{
-    width:30%;
-    margin:40px 0;
+.donate__decoration{
+    flex:2;
 }
 
-h2{
-    font-size:var(--titleSize);
+.donate .flex{
+    align-items:flex-start;
 }
 
-.amount .grid-item{
-    background-color:#f4f4f4;
+.donate button{
+    flex:1;
+}
+
+.donate__controls .flex{
+    gap:10px;
+}
+
+.donate__amount{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    column-gap:10px;
+    row-gap:25px;
+}
+
+.donate .btn{
     padding:15px 0;
-    border-radius:10px;
-    cursor:pointer;
-    font-size:18px;
-    border:1px solid #cacaca;
 }
 
-#selected{
-    background-color:var(--primaryBlueHover);
-    border:none;
-    color:#fff;
-}
-
-.identify{
-    flex:1;
-}
-
-.flex-amount{
-    gap:100px;
-}
-
-.subtitle{
-    font-size:22px;
-    margin-bottom:30px;
-}
-
-.amount .grid{
-    grid-template-columns:repeat(auto-fill, minmax(100px, 1fr));
-    column-gap:20px;
-    row-gap:32px;
-}
-
-.amount .flex{
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.amount__donation{
-    flex:1;
-}
-
-.identity .flex{
-    justify-content: flex-start;
-}
-
-.identity__item{
-    padding:15px 70px;
-    border:1px solid #cacaca;
-    border-radius:10px;
-    background-color:#f4f4f4;
-    cursor:pointer;
-}
-
-.data__input{
-    width:100%;
+.donate__input{
     padding:15px;
-    margin-top:20px;
-    outline:none;
-}
-
-.data__element{
-    margin-bottom:30px;
-    width:50%;
-}
-
-.data__input[type="submit"]{
-    width:auto;
-    padding:20px 70px;
-    background-color:var(--primaryBlue);
-    transition:background-color .2s;
     border:none;
+    border:3px solid #cacaca;
+    outline:none;
+    min-width:0;
+}
+
+.donate__input::placeholder{
+    font-size:16px;
+}
+
+.donate__input:focus{
+    border:3px solid #aaa;
+}
+
+input[type="submit"]{
+    background-color:#FF9900;
     color:#fff;
-    font-weight: 700;
-    border-radius:10px;
+    grid-column:2/3;
 }
 
-.data__name, .data__email{
-    flex:1;
+.donate__controls h3{
+    line-height:2.8;
+    font-weight:500;
 }
 
-.data .flex{
-    justify-content: flex-start;
+.donate__text h2{
+    margin-top:25px;    
 }
 
-.data__input[type="submit"]:hover{
-    background-color: var(--primaryBlueHover);
+.donate__title{
+    display:inline-block;
+    line-height:0;
+    margin-bottom:15px;
+    vertical-align:middle;
 }
 
-@media screen and (max-width:925px){
-    .data__element{
-        width:100%;
-    }
+.donate__title img{
+    width:56px;
+    margin-right:15px;
+}
 
-    .amount .grid{
-        grid-template-columns:repeat(auto-fill, minmax(250px,1fr));
-    }
-
-    .data__element:last-child{
-        text-align:center;
+@media screen and (max-width:849px){
+    .donate__decoration, .donate__controls{
+        flex-basis:100%;
     }
 }
